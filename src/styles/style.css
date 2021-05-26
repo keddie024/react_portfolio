@@ -1,0 +1,362 @@
+:root {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    background-color: rgb(214, 226, 241);
+    --backgroundColor: rgb(214, 226, 241);
+    --smokey: rgb(44, 44, 44);
+    --lighterblue:  rgb(129, 219, 231);
+    --fontcolor: rgb(47, 67, 88);
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 20px 20px 0px;
+    background-color: var(--smokey);
+}
+
+.navbar h1 {
+    font-size: 42px;
+    text-align: right;
+    color: var(--smokey);
+    background-color: var(--lighterblue);
+    padding: 10px 10px 10px 50px;
+} 
+
+.navbar .navlinks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.link {
+    text-decoration: none;
+    padding: 5px 10px;
+    color: var(--lighterblue);
+    margin-right: 10px;
+    background-image: linear-gradient(270deg, var(--lighterblue) 0%, var(--lighterblue) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: bottom;
+    transition: all 0.25s ease-in;
+    font-size: 24px;
+}
+
+.link:hover {
+    cursor: pointer;
+    background-color: var(--lighterblue);
+    color: var(--smokey);
+}
+
+.coverArea {
+    width: 100%;
+    height: 280px;
+}
+
+.coverPhoto {
+    position: relative;
+    background-image: url(../images/pexels-david-bartus-963278.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    text-align: right;
+    background-color: rgb(64, 120, 180);
+    background-blend-mode: multiply;
+}
+
+.subtitleText {
+    position: absolute;
+    bottom: 40px;
+    right: 100px;
+    font-size: 32px;
+    background-color: var(--lighterblue);
+    color: var(--smokey);
+    padding: 10px;
+}
+
+.article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex: 1 0 100%;
+    margin-top: 30px;
+    margin-right: 2%;
+}
+
+.article h1{
+    font-size: 34px;
+    color: var(--fontcolor);
+    margin-right: 40px;
+    padding: 10px;
+    text-align: right;
+    border-style: none solid none none;
+    border-right-color: var(--fontcolor);
+    border-width: 3px;
+    flex: 0 0 12%
+}
+
+.article p {
+    margin-right: 40px;
+    font-size: 18px;
+    color: var(--fontcolor);
+    flex: 0 0 75%
+}
+
+#profileImage {
+    width: 274.4px;
+    height: 263.8px;
+    float: left;
+    padding: 0px 0px 0px 5px;
+    margin-right: 20px;
+}
+
+.projectFlex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 0 1 100%;
+}
+
+.projectBox {
+    flex: 0 1 44%;
+    width: 100%;
+    height: 150px;
+    margin: 0.5%;
+    border: 5px solid var(--lighterblue);
+    box-sizing: border-box;
+    color: var(--smokey);
+    text-align: left;
+}
+
+.projectInfo {
+    position: relative;
+    top: 10%;
+    font-size: 12px;
+    background-color: var(--lighterblue);
+    color: var(--smokey);
+    padding: 10px;
+}
+
+#project1 {
+    flex: 0 1 89%;
+    height: 413.33px;
+}
+
+#projectImage1 {
+    position: relative;
+    background-image: url(../images/lopez-robin-apax4M-4kFI-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--fontcolor);
+    background-blend-mode: multiply;
+}
+
+#projectImage1:hover {
+    cursor: pointer;
+    background-color: var(--fontcolor);
+    background-blend-mode: normal;
+}
+
+#projectImage2 {
+    position: relative;
+    background-image: url(../images/pexels-pixabay-270348.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--fontcolor);
+    background-blend-mode: multiply;
+}
+
+#projectImage2:hover {
+    cursor: pointer;
+    background-color: var(--fontcolor);
+    background-blend-mode: normal;
+}
+
+#projectImage3 {
+    position: relative;
+    background-image: url(../images/pexels-bich-tran-760718.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--fontcolor);
+    background-blend-mode: multiply;
+}
+
+#projectImage3:hover {
+    cursor: pointer;
+    background-color: var(--fontcolor);
+    background-blend-mode: normal;
+}
+
+#projectImage4 {
+    position: relative;
+    background-image: url(../images/pexels-angele-j-128402.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--fontcolor);
+    background-blend-mode: multiply;
+}
+
+#projectImage4:hover {
+    cursor: pointer;
+    background-color: var(--fontcolor);
+    background-blend-mode: normal;
+}
+
+#projectImage5 {
+    position: relative;
+    background-image: url(../images/pexels-pixabay-163703.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--fontcolor);
+    background-blend-mode: multiply;
+}
+
+#projectImage5:hover {
+    cursor: pointer;
+    background-color: var(--fontcolor);
+    background-blend-mode: normal;
+}
+
+.imageText {
+    position: absolute;
+    bottom: 20px;
+    padding: 8px;
+    text-align: center;
+    color: var(--smokey);
+    background-color: var(--lighterblue);
+}
+
+.imageText h2 {
+    font-size: 24px;
+}
+
+.imageText p {
+    font-size: 12px;
+    text-align: left;
+    padding-top: 7px;
+}
+
+.contactOptions {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 20px 20px 0px;
+    flex: 0.75 0 60%;
+}
+
+.contactLink {
+    text-decoration: none;
+    padding: 10px;
+    color: var(--fontcolor);
+    background-image: linear-gradient(270deg, var(--fontcolor) 0%, var(--fontcolor) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: bottom;
+    transition: all 0.25s ease-in;
+    font-size: 20px;
+}
+
+
+
+@media screen and (max-width: 992px) {
+
+    .article h1 {
+        font-size: 24px;
+    }
+    
+    .link {
+        font-size: 20px;
+    }
+    
+    #project1 {
+        flex: 0 1 44%;
+        width: 100%;
+        height: 150px;
+    }
+
+    .contactLink {
+        font-size: 14px;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+   
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navlinks {
+        padding-top: 10px;
+        justify-content: center;
+    }
+
+    .link {
+        font-size: 14px;
+    }
+    
+    .article {
+        flex-direction: column;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .article h1 {
+        font-size: 32px;
+        text-align: left;
+        border-style: none none solid none;
+        margin-bottom: 20px;
+    }
+
+    .article p {
+        text-align: left;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #profileImage {
+        width: 205.8px;
+        height: 197.85px;
+        padding-bottom: 10px;
+        padding-right: 10px;
+        margin-right: 10px;
+    }
+
+    #project1 {
+        flex: 0 1 98%;
+        width: 100%;
+        height: 150px;
+    }
+
+    .projectBox {
+        flex: 0 1 98%;
+        width: 100%;
+        height: 150px;
+    }
+
+    .contactOptions {
+        flex-flow: row;
+    }
+
+    .contactLink {
+        font-size: 10px;
+    }
+
+
+}
